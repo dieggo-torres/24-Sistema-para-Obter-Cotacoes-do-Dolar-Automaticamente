@@ -44,8 +44,7 @@ time.sleep(1)
 botao_aceitar[0].click()
 
 # Clicar no botão para baixar a planilha
-botao_baixar_dados = driver.find_element(
-    By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
+botao_baixar_dados = driver.find_element(By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
 botao_baixar_dados.click()
 
 # Preencher campos do formulário de login
@@ -63,6 +62,5 @@ campo_senha.send_keys(senha)
 driver.find_element(By.XPATH, '//*[@id="signup"]/a').click()
 
 # Clica novamente no botão para baixar a planilha
-botao_baixar_dados = driver.find_element(
-    By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
+botao_baixar_dados = driver.find_element(By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
 botao_baixar_dados.click()
