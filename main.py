@@ -45,7 +45,7 @@ botao_aceitar[0].click()
 
 # Clicar no botão para baixar a planilha
 botao_baixar_dados = driver.find_element(
-    By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
+    By.CSS_SELECTOR, '#column-content div a')
 botao_baixar_dados.click()
 
 # Preencher campos do formulário de login
@@ -60,9 +60,9 @@ campo_senha = driver.find_element(By.ID, 'loginForm_password')
 campo_senha.send_keys(senha)
 
 # Enviar formulário
-driver.find_element(By.XPATH, '//*[@id="signup"]/a').click()
+driver.find_element(By.CSS_SELECTOR, '#loginPopup a.orange.newButton').click()
 
 # Clica novamente no botão para baixar a planilha
 botao_baixar_dados = driver.find_element(
-    By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
+    By.CSS_SELECTOR, '#column-content div a')
 botao_baixar_dados.click()
