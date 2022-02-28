@@ -44,12 +44,7 @@ time.sleep(1)
 botao_aceitar[0].click()
 
 # Clicar no botão para baixar a planilha
-<<<<<<< HEAD
-botao_baixar_dados = driver.find_element(
-    By.CSS_SELECTOR, '#column-content div a')
-=======
-botao_baixar_dados = driver.find_element(By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
->>>>>>> a466e28c6f029e7d88103a4adc1eed78afceafbc
+botao_baixar_dados = driver.find_element(By.CSS_SELECTOR, '#column-content div a')
 botao_baixar_dados.click()
 
 # Preencher campos do formulário de login
@@ -67,10 +62,5 @@ campo_senha.send_keys(senha)
 driver.find_element(By.CSS_SELECTOR, '#loginPopup a.orange.newButton').click()
 
 # Clica novamente no botão para baixar a planilha
-<<<<<<< HEAD
-botao_baixar_dados = driver.find_element(
-    By.CSS_SELECTOR, '#column-content div a')
-=======
-botao_baixar_dados = driver.find_element(By.XPATH, '//*[@id="column-content"]/div[4]/div/a')
->>>>>>> a466e28c6f029e7d88103a4adc1eed78afceafbc
+botao_baixar_dados = driver.find_element(By.CSS_SELECTOR, '#column-content div a')
 botao_baixar_dados.click()
